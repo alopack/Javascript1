@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>Học lập trình miễn phí tại freetuts.net</h1>
+        <p>Click vào button để in mảng.</p>
+  
+        <button onclick="myFunction()">Run</button>
+  
+        <p id="demo"></p>
+  
+        <script>
+            function myFunction() {
+                var res = "";
+                res = res + "123 : " + ((Number.isFinite(123)) ? 
+                    'Là một số hữu hạn' : 'Không phải là một số hữu hạn') + "<br>";
+                res = res + "10/3 : " + ((Number.isFinite(10/3)) ? 
+                    'Là một số hữu hạn' : 'Không phải là một số hữu hạn') + "<br>";
+                res = res + "-4 : " + ((Number.isFinite(-4)) ? 
+                    'Là một số hữu hạn' : 'Không phải là một số hữu hạn') + "<br>";
+                res = res + "4,132 : " + ((Number.isFinite(4.132)) ? 
+                    'Là một số hữu hạn' : 'Không phải là một số hữu hạn') + "<br>";
+                res = res + "'123' : " + ((Number.isFinite('123')) ? 
+                    'Là một số hữu hạn' : 'Không phải là một số hữu hạn') + "<br>";
+                res = res + "'freetuts' : " + ((Number.isFinite('freetuts')) ? 
+                    'Là một số hữu hạn' : 'Không phải là một số hữu hạn') + "<br>";
+                res = res + "'1/6/2017' : " + ((Number.isFinite('1/6/2017')) ? 
+                    'Là một số hữu hạn' : 'Không phải là một số hữu hạn') + "<br>";
+                res = res + "true : " + ((Number.isFinite(true)) ? 
+                    'Là một số hữu hạn' : 'Không phải là một số hữu hạn') + "<br>";
+  
+                document.getElementById("demo").innerHTML = res;
+            }
+        </script>
+    </body>
+</html>
+//đã sửa đổi lan 2
