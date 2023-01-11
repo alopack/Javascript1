@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>Học lập trình miễn phí tại freetuts.net</h1>
+  
+        <button onclick="myFunction()">Run</button>
+  
+        <p id="demo"></p>
+  
+        <script>
+            var date = new Date('8/24/2017');
+            document.getElementById("demo").innerHTML = date;
+            function myFunction() {
+                var day = date.getDay();
+                var dayOfWeek = '';
+                if (day == 0) {
+                    dayOfWeek = 'Chủ nhật';
+                }
+                if (day == 1) {
+                    dayOfWeek = 'Thứ 2';
+                }
+                if (day == 2) {
+                    dayOfWeek = 'Thứ 3';
+                }
+                if (day == 3) {
+                    dayOfWeek = 'Thứ 4';
+                }
+                if (day == 4) {
+                    dayOfWeek = 'Thứ 5';
+                }
+                if (day == 5) {
+                    dayOfWeek = 'Thứ 6';
+                }
+                if (day == 6) {
+                    dayOfWeek = 'Thứ 7';
+                }
+                document.getElementById("demo").innerHTML = dayOfWeek;
+            }
+        </script>
+    </body>
+</html>
+// untrack file la gi
